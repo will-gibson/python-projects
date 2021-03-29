@@ -1,1 +1,3 @@
-Practice projects while learning Swift.
+A collection of practice projects while learning Swift.
+
+-Will Gibson
