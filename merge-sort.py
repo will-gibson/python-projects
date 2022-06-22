@@ -10,7 +10,7 @@ for i in range(n):
 
 
 def merge( ori_lst, left, mid, right ):
-	L, R = [], []					# PREPARE TWO TEMPORARY LIST TO HOLD ELEMENTS
+	L, R = [], []					# PREPARE TWO TEMPORARY LISTS TO HOLD ELEMENTS
 	for i in range( left, mid ):	# LOADING
 		L.append( ori_lst[i] )
 	for i in range( mid, right ):	# LOADING
@@ -25,7 +25,7 @@ def merge( ori_lst, left, mid, right ):
 			ori_lst[base] = R[0]
 			R.remove( R[0] )
 		base += 1
-	# UNLOAD THE REMAINER
+	# UNLOAD THE REMAINDER
 	while len( L ) > 0:				
 		ori_lst[base] = L[0]
 		L.remove( L[0] )
